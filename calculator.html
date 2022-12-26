@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<script src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<body>
+  <div class="flex-container">
+    <form action="">
+
+        <div class="page" id="page1">
+          
+            <h2>I Charge:</h2>
+            <label>$ Per Hour: </label>
+            <input type="number" id="hourlyRate" name="hourlyRate"/></br>
+          
+            <h2>And I Work:</h2>
+      
+            <label>Hours Per Day: </label>
+            <input type="number" id="hrsPerDay" name="hrsPerDay"></br>
+            <label>Days Per Week: </label>
+            <input type="number" id="daysPerWeek" name="daysPerWeek">
+          
+        </div>
+
+        <div class="page" id="page2">
+          
+            <h2>But my platform charges...</h2>
+            <label id="percent">Percent Rate:</label>
+            <input type="number" id="fees" name="platformFees"></input>
+            <label id="percentSymbol">%</label>
+
+          
+        </div>
+
+        <div class="page" id="page3">
+          
+            <h2>And... my Yearly Vacation days...</h2>
+            <label>Vacation Days: </label>
+            <input type="number" id="vacation" name="vacation"/>
+          
+        </div>
+
+        <div class="page" id="page4">
+            <h2>And I don't work holidays...</h2>
+            <label>Holidays: (11 Federally Per Year..)</label>
+            <input type="number" id="holidays" name="holidays"/>
+        </div>
+
+        <div class="page" id="page5">
+            <h2>Shoot, I got sick!</h2>
+            <label>Sick Days: </label>
+            <input type="number" id="sickDays" name="sick"/>
+        </div>
+
+        <div class="page" id="page6">
+            <h2>And Monthly Business Expenses:</h2>            
+            <label>Software: </label>
+            <input type="number" id="software" name="subs"/></br>
+            <label>Subscriptions: </label>
+            <input type="number" id="subscriptions" name="subs"/></br>
+            <label>Cell Phone: </label>
+            <input type="number" id="cellphone" name="cell"/></br>
+
+            <input type="button" id="add" value="Add New Expense" name="addExpense">
+            <input type="button" id="remove" value="Remove Expense" name="removeExpense">
+        </div>
+          
+        <div class="page" id="page7">
+            <h2>Oh yeah, Taxes:</h2>
+            <label>Estimated Tax Rate: </label>
+            <input type="number" id="taxRate" name="tax"/>%</br>
+        </div>
+    </div>
+
+        <div class="money">
+          <label>My Money:<h4 type="text" id="salary" name="salary"/></h4>
+            <h4 type="text" id="monthlySalary" name="monthlySalary"/></h4>
+            <h4 type="text" id="weeklySalary" name="weeklySalary"/></h4>
+            <h4 type="text" id="dailySalary" name="dailySalary"/></h4></label>
+        </div>
+
+        <div>
+          <input type="button" id="sbt" value="Calculate" />
+          <input type="reset" id="rst" value="Reset Form" /></br></br>
+        </div>
+        </br>
+        <!-- <input type=button id="next" value="Next"> -->
+
+    </form>
+  </div>
+  </body>
