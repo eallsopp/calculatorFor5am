@@ -1,0 +1,69 @@
+doctype html
+script(src='../js/index.js')
+link(rel='stylesheet' href='../css/style.css')
+
+block content
+  main
+    .flex-container
+      form(action='' id='timeDefine')
+        #page1.page
+          h2 I Charge:
+          label $ Per Hour: 
+          input#hourlyRate(type='number' name='hourlyRate')
+          br
+          h2 And I Work:
+          label Hours Per Day: 
+          input#hrsPerDay(type='number' name='hrsPerDay')
+          br
+          label Days Per Week: 
+          input#daysPerWeek(type='number' name='daysPerWeek')
+        #page2.page
+          h2 But my platform charges...
+          label#percent Percent Rate:
+          input#fees(type='number' name='platformFees')
+          label#percentSymbol %
+        #page3.page
+          h2 And... my Yearly Vacation days...
+          label Vacation Days: 
+          input#vacation(type='number' name='vacation')
+        #page4.page
+          h2 And I don&apos;t work holidays...
+          label Holidays: (11 Federally Per Year..)
+          input#holidays(type='number' name='holidays')
+        #page5.page
+          h2 Shoot, I got sick!
+          label Sick Days: 
+          input#sickDays(type='number' name='sick')
+        #page6.page
+          h2 And I Have Monthly Business Expenses:
+          label Software: 
+          input#software(type='number' name='subs')
+          br
+          label Subscriptions: 
+          input#subscriptions(type='number' name='subs')
+          br
+          label Cell Phone: 
+          input#cellphone(type='number' name='cell')
+          br
+          input#add(type='button' value='Add New Expense' name='addExpense')
+          input#remove(type='button' value='Remove Expense' name='removeExpense')
+        #page7.page
+          h2 Oh yeah, Taxes:
+          label Estimated Tax Rate: 
+          input#taxRate(type='number' name='tax')
+          | %
+          br
+    .money
+      label
+        | My Money:
+        h4#salary(type='text' name='salary') Annually: 
+        h4#monthlySalary(type='text' name='monthlySalary')  
+        h4#weeklySalary(type='text' name='weeklySalary')  
+        h4#dailySalary(type='text' name='dailySalary')  
+    div
+      input#sbt(type='button' value='Calculate')
+      input#rst(type='reset' value='Reset Form')
+      br
+      br
+    br
+    // <input type=button id="next" value="Next">
